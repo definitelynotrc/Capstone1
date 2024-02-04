@@ -158,39 +158,121 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               class="lucide lucide-search"
+              id="searchIcon"
             >
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.3-4.3" />
             </svg>
-            <input type="text" name="search" />
+            <input
+              type="text"
+              name="search"
+              id="searchInput"
+              placeholder="Search for places and jobs"
+            />
           </div>
         </div>
         <div class="job-container">
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
-          <div class="jobs"></div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title" onclick="handleJobClick(this)">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
+          <div class="jobs" onclick="handleJobClick(this)">
+            <div class="job-img">
+              <img src="/img/jobimg.png" alt="job" />
+            </div>
+            <div class="job-title">
+              <p>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+              <h1>Junior Front-End Developer</h1>
+              <p>Sumacab Campus, Cabanatuan City, Nueva Ecija</p>
+            </div>
+            <div class="apply-btn"><button>Apply Now!</button></div>
+          </div>
         </div>
       </div>
-
       <div class="right-container">
         <div class="job-desc">
           <h3>Junior Front-End Developer</h3>
@@ -199,13 +281,11 @@
             eiusmod tempor incididunt ut -labore et dolore magna aliqua
           </p>
         </div>
-        <div class="map"></div>
+        <div class="map">
+          <img src="/img/map2.png" alt="map" />
+        </div>
       </div>
     </div>
-    <!-- <script>
-      function initMap() { // Create a map object and specify the DOM element for
-         display var map = new google.maps.Map(document.getElementById('map'), {
-         center: {lat: -34.397, lng: 150.644}, zoom: 8 }); }
-    </script> -->
+    <script src="/js/dashboard.js"></script>
   </body>
 </html>

@@ -73,3 +73,19 @@ nav {
   cursor: pointer;
   margin-right: 20px;
 }
+.left-navlinks a svg,
+.nav-right a svg {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.left-navlinks a svg:hover,
+.nav-right a svg:hover {
+  color: #623fde;
+  transform: translateY(-2px);
+}
+
+.left-navlinks a svg:active,
+.nav-right a svg:active {
+  color: #4f2fc4;
+  transform: translateY(0);
+}

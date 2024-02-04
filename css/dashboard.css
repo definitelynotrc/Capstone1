@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 10px 30px;
+  align-items: center;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  width: 50%;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  margin-right: 80px;
+}
+.nav-logo svg {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.nav-logo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #623fde;
+}
+
+.left-navlinks {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  width: 25%;
+}
+.left-navlinks svg {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  margin-right: 20px;
+  color: black;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  width: 15%;
+  padding: 10px;
+  justify-content: space-between;
+  margin: 15px;
+}
+.nav-right svg {
+  width: 28px;
+  color: black;
+  height: 28px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-container {
+  width: 40%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.searchbar {
+  margin-left: 20px;
+  width: 90%;
+  padding: 18px;
+  height: 100px;
+}
+.searchbar-container {
+  background-color: #623fde;
+  position: relative;
+  height: 100%;
+  border-radius: 8px;
+  width: 90%;
+}
+.searchbar-container svg {
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 20px;
+  height: 30px;
+  width: 30px;
+}
+.searchbar-container input {
+  width: 70%;
+  height: 70%;
+  border-radius: 12px;
+  border: none;
+  margin-top: 1.7%;
+  margin-left: 2%;
+}
+
+.job-container {
+  align-items: start;
+  display: flex;
+  width: 600px;
+  max-height: 500px;
+  margin-left: 40px;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.jobs {
+  border: 1px solid red;
+  width: 100%;
+  min-height: 100px;
+}
+.right-container {
+  border: 1px solid red;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.job-desc {
+  height: 250px;
+  border: 1px solid red;
+}

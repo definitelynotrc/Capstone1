@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 20px;
+  color: #623fde;
+  font-size: 32px;
+  text-align: center;
+}
+
+.header {
+  width: 70%;
+  height: 168px;
+  margin: 5px 0 0 50px;
+}
+.header h1 {
+  font-size: 54px;
+  font-weight: 400;
+  margin: 0;
+  padding: 20px 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right {
+  height: 100%;
+  margin: 0 20px;
+}
+.right img {
+  width: 800px;
+  height: 699px;
+  overflow: hidden;
+}
+.left {
+  padding: 20px;
+}
+.left form {
+  width: 400px;
+  padding: 50px;
+}
+.left label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.left input {
+  height: 45px;
+  width: 500px;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.left input:focus {
+  outline: none;
+  border-color: #623fde;
+  box-shadow: 0 0 10px rgba(98, 63, 222, 0.2);
+}
+.left button {
+  background-color: #623fde;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  height: 60px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 449px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin-left: 6%;
+}
+
+.left button:hover {
+  background-color: #492bc2;
+}
+
+.left .password-container {
+  position: relative;
+}
+
+.left .toggle-password {
+  position: absolute;
+  top: 55%;
+  right: -70px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+}
+
+.left .toggle-confirmpassword {
+  position: absolute;
+  top: 55%;
+  right: -70px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+}

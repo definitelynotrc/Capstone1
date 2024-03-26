@@ -10,7 +10,6 @@
     <nav>
       <h1>Interlink</h1>
     </nav>
-
     <div class="header">
       <h1>Join Internlink now and post your job openings</h1>
     </div>
@@ -18,16 +17,40 @@
       <div class="left">
         <form>
           <label for="fullName">Full Name:</label>
-          <input type="text" id="fullName" name="fullName" required />
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            placeholder="Clarence Ariel V. Pamilar"
+          />
 
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required />
+          <label for="companyname">Company Name:</label>
+          <input
+            type="text"
+            id="companyname"
+            name="companyname"
+            required
+            placeholder="TechStack"
+          />
 
           <label for="phoneNumber">Phone Number:</label>
-          <input type="tel" id="phoneNumber" name="phoneNumber" required />
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            required
+            placeholder="09xxxxxxxx"
+          />
 
           <label for="emailAddress">Email Address:</label>
-          <input type="email" id="emailAddress" name="emailAddress" required />
+          <input
+            type="email"
+            id="emailAddress"
+            name="emailAddress"
+            required
+            placeholder="ClarenceAriel@gmail.com"
+          />
 
           <div class="password-container">
             <label for="password">Password:</label>
@@ -54,10 +77,13 @@
 
           <button type="submit">Register</button>
         </form>
+        <div class="loginlink">
+          <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
       </div>
 
       <div class="right">
-        <img src="/img/logemployer.png" alt="registeration" />
+        <img src="/img/logemployer-removebg-preview.png" alt="registeration" />
       </div>
     </div>
     <script src="/js/reg-emp.js"></script>

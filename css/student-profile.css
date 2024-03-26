@@ -4,6 +4,7 @@
   font-family: Poppins, sans-serif;
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -15,6 +16,7 @@ nav {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  height: 100px;
 }
 
 .nav-left {
@@ -28,7 +30,7 @@ nav {
   align-items: center;
   padding: 10px;
   margin: 15px;
-  margin-right: 80px;
+  margin-right: 50px;
 }
 .nav-logo svg {
   width: 50px;
@@ -44,27 +46,56 @@ nav {
 .left-navlinks {
   display: flex;
   align-items: center;
-  margin: 5px;
   padding: 10px;
   justify-content: space-between;
-  width: 25%;
+  width: 300px;
 }
-.left-navlinks svg {
-  width: 28px;
-  height: 28px;
+.linknames-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+.linknames-left svg {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
-  margin-right: 20px;
   color: black;
+}
+
+.linknames-left p {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+.linknames-left a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.left-navlinks a:hover svg,
+.linknames-left a:hover svg,
+.linknames-left a:hover p,
+.linknames-right a:hover p,
+.nav-right a:hover svg {
+  color: #623fde;
+  transform: translateY(-2px);
+}
+
+.left-navlinks a:active svg,
+.linknames-left a:active svg,
+.nav-right a:active svg {
+  color: #4f2fc4;
+  transform: translateY(0);
 }
 
 .nav-right {
   display: flex;
   align-items: center;
   margin: 5px;
-  width: 15%;
-  padding: 10px;
-  justify-content: space-between;
+  width: 300px;
   margin: 15px;
+  justify-content: space-evenly;
 }
 .nav-right svg {
   width: 28px;
@@ -73,19 +104,154 @@ nav {
   cursor: pointer;
   margin-right: 20px;
 }
-.left-navlinks a svg,
-.nav-right a svg {
-  transition: color 0.3s ease, transform 0.3s ease;
+.linknames-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.linknames-right svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: black;
 }
 
-.left-navlinks a svg:hover,
-.nav-right a svg:hover {
-  color: #623fde;
-  transform: translateY(-2px);
+.linknames-right p {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  margin-right: 15px;
+}
+.linknames-right a {
+  text-decoration: none;
+  text-align: center;
+}
+.rectangle {
+  width: 100%;
+  height: 300px;
+
+  position: relative;
+  background-image: url("/img/s-l1600.jpg");
+  border-radius: 8px;
 }
 
-.left-navlinks a svg:active,
-.nav-right a svg:active {
-  color: #4f2fc4;
-  transform: translateY(0);
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #623fde;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8%;
+  align-items: center;
+  justify-content: center;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+}
+.skillset {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  align-items: center;
+  flex-direction: column;
+}
+.skill-header h1 {
+  color: black;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.skill {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.skill p {
+  text-align: center;
+  color: black;
+
+  font-size: 20px;
+}
+.educbg {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+}
+.education {
+  display: flex;
+  width: 100%;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.education p {
+  text-align: center;
+  color: black;
+
+  font-size: 20px;
+}
+.educ-header h1 {
+  color: black;
+
+  font-size: 30px;
+  margin-top: 20px;
+}
+.experience {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+}
+.exp {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.exp-header h1 {
+  color: black;
+
+  font-size: 30px;
+  margin-top: 20px;
+}
+.exp p {
+  text-align: center;
+  color: black;
+  font-size: 20px;
 }

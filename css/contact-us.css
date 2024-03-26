@@ -15,6 +15,7 @@ nav {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  height: 100px;
 }
 
 .nav-left {
@@ -28,7 +29,7 @@ nav {
   align-items: center;
   padding: 10px;
   margin: 15px;
-  margin-right: 80px;
+  margin-right: 50px;
 }
 .nav-logo svg {
   width: 50px;
@@ -44,27 +45,56 @@ nav {
 .left-navlinks {
   display: flex;
   align-items: center;
-  margin: 5px;
   padding: 10px;
   justify-content: space-between;
-  width: 25%;
+  width: 300px;
 }
-.left-navlinks svg {
-  width: 28px;
-  height: 28px;
+.linknames-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+.linknames-left svg {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
-  margin-right: 20px;
   color: black;
+}
+
+.linknames-left p {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+.linknames-left a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.left-navlinks a:hover svg,
+.linknames-left a:hover svg,
+.linknames-left a:hover p,
+.linknames-right a:hover p,
+.nav-right a:hover svg {
+  color: #623fde;
+  transform: translateY(-2px);
+}
+
+.left-navlinks a:active svg,
+.linknames-left a:active svg,
+.nav-right a:active svg {
+  color: #4f2fc4;
+  transform: translateY(0);
 }
 
 .nav-right {
   display: flex;
   align-items: center;
   margin: 5px;
-  width: 15%;
-  padding: 10px;
-  justify-content: space-between;
+  width: 300px;
   margin: 15px;
+  justify-content: space-evenly;
 }
 .nav-right svg {
   width: 28px;
@@ -73,19 +103,27 @@ nav {
   cursor: pointer;
   margin-right: 20px;
 }
-.left-navlinks a svg,
-.nav-right a svg {
-  transition: color 0.3s ease, transform 0.3s ease;
+.linknames-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.linknames-right svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: black;
 }
 
-.left-navlinks a svg:hover,
-.nav-right a svg:hover {
-  color: #623fde;
-  transform: translateY(-2px);
+.linknames-right p {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  margin-right: 15px;
 }
-
-.left-navlinks a svg:active,
-.nav-right a svg:active {
-  color: #4f2fc4;
-  transform: translateY(0);
+.linknames-right a {
+  text-decoration: none;
+  text-align: center;
 }

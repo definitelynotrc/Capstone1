@@ -8,7 +8,9 @@
   </head>
   <body>
     <nav>
-      <h1>Interlink</h1>
+      <a href="index.html" style="text-decoration: none; color: #623fde">
+        <h1>Interlink</h1>
+      </a>
     </nav>
 
     <div class="header">
@@ -16,18 +18,85 @@
     </div>
     <div class="container">
       <div class="left">
-        <form>
-          <label for="fullName">Full Name:</label>
-          <input type="text" id="fullName" name="fullName" required />
+        <form action="index.html">
+          <div class="name-inputs-con">
+            <div class="name-inputs">
+              <label for="firstName" class="fname">First Name:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                placeholder="Clarence"
+              />
+            </div>
+            <div class="name-inputs">
+              <label for="middleName">Middle Name:</label>
+              <input
+                type="text"
+                id="middleName"
+                name="middleName"
+                required
+                placeholder="Optional"
+              />
+            </div>
+            <div class="name-inputs">
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                placeholder="Pamilar"
+              />
+            </div>
+            <div class="name-inputs">
+              <label for="age">Age:</label>
+              <input
+                type="text"
+                id="age"
+                name="age"
+                required
+                placeholder="21"
+              />
+            </div>
+          </div>
 
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required />
+          <label for="StudentNumber">Student Number:</label>
+          <input
+            type="text"
+            id="studentNumber"
+            name="StudentNumber"
+            required
+            placeholder="SUM2021-01815"
+          />
+
+          <label for="Department">Department</label>
+          <input
+            type="text"
+            id="college"
+            name="department"
+            required
+            placeholder="College of Information Technology and Communications "
+          />
 
           <label for="phoneNumber">Phone Number:</label>
-          <input type="tel" id="phoneNumber" name="phoneNumber" required />
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            required
+            placeholder="09123131312"
+          />
 
           <label for="emailAddress">Email Address:</label>
-          <input type="email" id="emailAddress" name="emailAddress" required />
+          <input
+            type="email"
+            id="emailAddress"
+            name="emailAddress"
+            required
+            placeholder=" claremceariel@gmail.com"
+          />
 
           <div class="password-container">
             <label for="password">Password:</label>
@@ -54,6 +123,9 @@
 
           <button type="submit">Register</button>
         </form>
+        <div class="loginlink">
+          <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
       </div>
 
       <div class="right">

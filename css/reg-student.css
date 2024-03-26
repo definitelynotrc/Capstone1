@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   font-family: Poppins, sans-serif;
   margin: 0;
@@ -13,48 +11,65 @@ nav {
   text-align: center;
 }
 
-.header {
-  width: 70%;
-  height: 168px;
-  margin: 5px 0 0 50px;
+body {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.header {
+  width: 50%;
+  height: 168px;
+  margin-left: 3%;
+}
+
 .header h1 {
-  font-size: 54px;
+  font-size: 40px;
   font-weight: 400;
   margin: 0;
   padding: 20px 10px;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .right {
   height: 100%;
-  margin: 0 20px;
+  margin-right: 5%;
 }
+
 .right img {
-  width: 800px;
-  height: 560px;
+  width: 700px;
+  height: 600px;
   overflow: hidden;
 }
+
 .left {
-  padding: 20px;
+  margin-left: 5%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .left form {
-  width: 400px;
-  padding: 50px;
+  width: 300px;
 }
+
 .left label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .left input {
-  height: 45px;
+  height: 40px;
   width: 500px;
   padding: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border: 1px solid black;
   border-radius: 8px;
@@ -67,6 +82,7 @@ nav {
   border-color: #623fde;
   box-shadow: 0 0 10px rgba(98, 63, 222, 0.2);
 }
+
 .left button {
   background-color: #623fde;
   font-size: 20px;
@@ -94,16 +110,59 @@ nav {
 .left .toggle-password {
   position: absolute;
   top: 55%;
-  right: -70px;
+  right: -170px;
   transform: translateY(-50%);
   cursor: pointer;
   color: #333;
 }
+
 .left .toggle-confirmpassword {
   position: absolute;
   top: 55%;
-  right: -70px;
+  right: -170px;
   transform: translateY(-50%);
   cursor: pointer;
   color: #333;
+}
+
+.loginlink {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30%;
+}
+.name-inputs-con {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.name-inputs {
+  width: 100%;
+}
+
+.name-inputs label {
+  margin-bottom: 2px;
+  display: block;
+}
+
+.name-inputs input {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.name-inputs input:focus {
+  outline: none;
+  border-color: #623fde;
+  box-shadow: 0 0 10px rgba(98, 63, 222, 0.2);
 }

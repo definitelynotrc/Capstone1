@@ -6,6 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -15,6 +22,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   height: 100px;
+  border: 1px solid #e4e2e0;
 }
 
 .nav-left {
@@ -38,7 +46,7 @@ nav {
 .nav-logo h1 {
   font-size: 30px;
   font-weight: bold;
-  color: #623fde;
+  color: white;
 }
 
 .left-navlinks {
@@ -47,6 +55,7 @@ nav {
   padding: 10px;
   justify-content: space-between;
   width: 300px;
+  margin-left: 20%;
 }
 .linknames-left {
   display: flex;
@@ -125,4 +134,100 @@ nav {
 .linknames-right a {
   text-decoration: none;
   text-align: center;
+}
+
+.side-nav {
+  overflow-x: hidden;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #623fde;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.snav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 10px;
+}
+.snav.active {
+  background-color: white;
+  color: black;
+  border-radius: 8px 0 0 8px;
+}
+.snav.active a {
+  color: black;
+}
+.snav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.side-nav a:hover {
+  background-color: #555;
+}
+
+.form-container {
+  max-width: 800px;
+  padding: 20px;
+  margin-left: 30%;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+}
+.form-group input[type="file"] {
+  margin-top: 5px;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: #623fde;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.form-group button:hover {
+  background-color: #4f2fc4;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #623fde;
+  color: #fff;
+  border-radius: 5px;
+  width: 170px;
+}
+
+.custom-file-upload:hover {
+  background-color: #4f2fc4;
+}
+
+#file-upload {
+  display: none;
 }

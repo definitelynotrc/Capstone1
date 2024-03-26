@@ -32,7 +32,7 @@
         <h1>Interlink</h1>
       </div>
       <div class="nav-right">
-        <a href="#">
+        <a href="dashboard.html">
           <svg
             width="40"
             height="40"
@@ -57,10 +57,10 @@
           </svg>
           <p>Jobs</p>
         </a>
-        <a href="">
+        <a href="student-reg.html">
           <button class="find-job-btn">Find a Job</button>
         </a>
-        <a href="">
+        <a href="emp-reg.html">
           <button class="post-job-btn">Post a Job</button>
         </a>
       </div>
@@ -73,9 +73,15 @@
             Launch Your <span>Career </span><br />with Exciting Opportunities!
           </h1>
         </div>
-        <form>
+        <form action="dashboard.html">
           <label for="emailAddress">Email Address:</label>
-          <input type="email" id="emailAddress" name="emailAddress" required />
+          <input
+            type="email"
+            id="emailAddress"
+            name="emailAddress"
+            required
+            pattern="^[]"
+          />
           <div class="password-container">
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
@@ -136,7 +142,7 @@
             <h3>Post your openings for students to see</h3>
           </div>
           <div class="btn-holder">
-            <button>Post a Job</button>
+            <a href="emp-reg.html"><button>Post a Job</button></a>
           </div>
         </div>
       </div>

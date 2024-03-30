@@ -24,10 +24,10 @@ body {
 }
 
 .header h1 {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 52px;
+  font-weight: 500;
   margin: 0;
-  padding: 20px 10px;
+  padding: 20px;
 }
 
 .container {
@@ -133,36 +133,4 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 30%;
-}
-.name-inputs-con {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 50%;
-}
-.name-inputs {
-  width: 100%;
-}
-
-.name-inputs label {
-  margin-bottom: 2px;
-  display: block;
-}
-
-.name-inputs input {
-  height: 40px;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-.name-inputs input:focus {
-  outline: none;
-  border-color: #623fde;
-  box-shadow: 0 0 10px rgba(98, 63, 222, 0.2);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/student-profile.css" />
+    <link rel="stylesheet" href="./css/notifstudent.css" />
     <script src="./js/student-profile.js"></script>
   </head>
   <body>
@@ -126,7 +126,7 @@
           </a>
         </div>
         <div class="linknames-right">
-          <a href="#" id="notificationIcon">
+          <a href="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -176,108 +176,16 @@
         </div>
       </div>
     </nav>
-    <div id="editProfileModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Edit Profile</h2>
-        <form id="profileForm">
-          <label for="phoneNumber">Phone Number:</label>
-          <input type="text" id="phoneNumber" name="phoneNumber" required />
-          <label for="college">College:</label>
-          <input type="text" id="college" name="college" required />
-          <label for="campus">Campus:</label>
-          <input type="text" id="campus" name="campus" required />
-          <label for="address">Address:</label>
-          <input type="text" id="address" name="address" required />
-          <label for="department">Department:</label>
-          <input type="text" id="department" name="department" required />
-          <button type="submit">Save</button>
-        </form>
-      </div>
-    </div>
-    <div id="notificationModal" class="notif-modal">
-      <div class="notif-modal-content">
-        <div class="notif-header">
-          <h2>Notifications</h2>
-        </div>
-        <div class="notif">
-          <img src="./img/itman.png" alt="" />
-          <div class="notif-text">
-            <p>
-              Clarence Ariel V. Pamilar wants to apply for :
-              <b> Junior Web Developer</b>
-            </p>
-
-            <p>Created at 10:10 AM 29/03/24</p>
-          </div>
-        </div>
-        <span class="notif-close">&times;</span>
-      </div>
-    </div>
-
+    <div class="header"></div>
     <div class="container">
-      <div class="profile">
-        <div class="rectangle">
-          <div class="circle">
-            <img src="./img/itman.png" alt="" />
-          </div>
-        </div>
+      <div class="notification unread">
+        <p>
+          Your application for the position of Junior Web developer has been
+          accepted
+        </p>
+        <p>Created at 10:10 AM 29/03/24 </p>
       </div>
-      <div class="bio">
-        <h1>IT MAN</h1>
-        <p>Student</p>
-        <p>Information Technology</p>
-        <p>NEUST Sumacab Campus</p>
-        <button class="edit-button">Edit Bio</button>
-      </div>
-      <div class="detail">
-        <div class="skillset">
-          <div class="skill-header">
-            <h1>Skills</h1>
-            <button class="edit-button">Edit</button>
-          </div>
-          <div class="skill">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>Node.js</p>
-            <p>Express.js</p>
-            <p>MongoDB</p>
-            <p>Python</p>
-            <p>Java</p>
-            <p>C++</p>
-          </div>
-        </div>
-        <div class="educbg">
-          <div class="educ-header">
-            <h1>Education Background</h1>
-            <button class="edit-button">Edit</button>
-          </div>
-          <div class="education">
-            <h3>Junior High School</h3>
-            <p><strong>Duration:</strong> 2016-2019</p>
-            <p><strong>School:</strong> San Antonio National High School</p>
-            <h3>Senior High School</h3>
-            <p><strong>Duration:</strong> 2016-2019</p>
-            <p><strong>School:</strong> San Antonio National High School</p>
-          </div>
-        </div>
-        <div class="experience">
-          <div class="exp-header">
-            <h1>Experience</h1>
-            <button class="edit-button">Edit</button>
-          </div>
-          <div class="exp">
-            <p>Intern @Google 2023</p>
-            <p>Intern</p>
-            <p>Worked as an intern at Google in 2023.</p>
-            <p>Intern @Facebook 2024</p>
-            <p>Intern</p>
-            <p>Worked as an intern at Facebook in 2024.</p>
-          </div>
-        </div>
-      </div>
+      <div class="notification seen"></div>
     </div>
   </body>
 </html>

@@ -9,31 +9,6 @@
   <body>
     <nav>
       <div class="nav-left">
-        <a href="dashboard.html" style="text-decoration: none">
-          <div class="nav-logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-link"
-              color="#623FDE"
-            >
-              <path
-                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
-              />
-              <path
-                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-              />
-            </svg>
-            <h1>Interlink</h1>
-          </div>
-        </a>
         <div class="left-navlinks">
           <div class="linknames-left">
             <a href="">
@@ -125,7 +100,7 @@
           </a>
         </div>
         <div class="linknames-right">
-          <a href="">
+          <a href="#" id="notificationIcon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -145,27 +120,172 @@
           </a>
         </div>
         <div class="linknames-right">
-          <a href="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-circle-user-round"
-            >
-              <path d="M18 20a6 6 0 0 0-12 0" />
-              <circle cx="12" cy="10" r="4" />
-              <circle cx="12" cy="12" r="10" />
-            </svg>
-            <p>Profile</p></a
-          >
+          <a href="#">
+            <div class="profile-dropdown">
+              <div class="profile-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-user-round"
+                >
+                  <path d="M18 20a6 6 0 0 0-12 0" />
+                  <circle cx="12" cy="10" r="4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                <p>Profile</p>
+              </div>
+              <div class="dropdown-content">
+                <button id="editProfileButton">Edit Profile</button>
+                <button>Logout</button>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </nav>
+    <div class="side-nav">
+      <a href="dashboard.html" style="text-decoration: none">
+        <div class="nav-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-link"
+            color="#000000"
+          >
+            <path
+              d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+            />
+            <path
+              d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+            />
+          </svg>
+          <h1>Interlink</h1>
+        </div>
+      </a>
+      <div class="snav"><a href="#">Post a Job</a></div>
+      <div class="snav"><a href="#">Published Jobs</a></div>
+      <div class="snav"><a href="#">Pending Jobs</a></div>
+      <div class="snav"><a href="#">Applicants</a></div>
+    </div>
+    <div id="editProfileModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Profile</h2>
+        <form id="profileForm">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" required />
+          <label for="college">College:</label>
+          <input type="text" id="college" name="college" required />
+          <label for="campus">Campus:</label>
+          <input type="text" id="campus" name="campus" required />
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" required />
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+    <div id="notificationModal" class="notif-modal">
+      <div class="notif-modal-content">
+        <div class="notif-header">
+          <h2>Notifications</h2>
+        </div>
+        <div class="notif">
+          <img src="./img/itman.png" alt="" />
+          <div class="notif-text">
+            <p>
+              Clarence Ariel V. Pamilar wants to apply for :
+              <b> Junior Web Developer</b>
+            </p>
+
+            <p>Created at 10:10 AM 29/03/24</p>
+          </div>
+        </div>
+        <span class="notif-close">&times;</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="profile">
+        <div class="rectangle">
+          <div class="circle">
+            <img src="./img/manh-nghiem-gKyweodgqXc-unsplash.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bio">
+        <h1>IT MAN</h1>
+        <p>HR</p>
+        <p>Tech Stack</p>
+        <button class="edit-button">Edit Bio</button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const editProfileButton = document.getElementById("editProfileButton");
+        const editProfileModal = document.getElementById("editProfileModal");
+        const editProfileCloseBtn = document.querySelector(
+          "#editProfileModal .close"
+        );
+        const notificationModal = document.getElementById("notificationModal");
+        const notificationIcon = document.getElementById("notificationIcon");
+        const notificationCloseBtn = document.querySelector(
+          "#notificationModal .notif-close"
+        );
+
+        // Show edit profile modal when "Edit Profile" button is clicked
+        editProfileButton.addEventListener("click", function () {
+          editProfileModal.style.display = "block";
+        });
+
+        // Close edit profile modal when the close button is clicked
+        editProfileCloseBtn.addEventListener("click", function () {
+          editProfileModal.style.display = "none";
+        });
+
+        // Close edit profile modal when clicking outside of it
+        window.addEventListener("click", function (event) {
+          if (event.target === editProfileModal) {
+            editProfileModal.style.display = "none";
+          }
+        });
+
+        // Prevent the edit profile modal from closing when clicking inside the modal content
+        editProfileModal.addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+
+        // Show notification modal when notification icon is clicked
+        notificationIcon.onclick = function () {
+          notificationModal.style.display = "block";
+        };
+
+        // Close notification modal when the close button is clicked
+        notificationCloseBtn.onclick = function () {
+          notificationModal.style.display = "none";
+        };
+
+        // Close notification modal when clicking outside of it
+        window.onclick = function (event) {
+          if (event.target == notificationModal) {
+            notificationModal.style.display = "none";
+          }
+        };
+      });
+    </script>
   </body>
 </html>

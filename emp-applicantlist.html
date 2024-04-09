@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/emp-prof.css" />
+    <link rel="stylesheet" href="./css/emp-applicantlist.css" />
   </head>
   <body>
     <nav>
@@ -225,54 +225,39 @@
         <span class="notif-close">&times;</span>
       </div>
     </div>
-    <div class="container">
-      <div class="profile">
-        <div class="rectangle">
-          <div class="circle">
-            <img src="./img/manh-nghiem-gKyweodgqXc-unsplash.jpg" alt="" />
-          </div>
+
+    <div class="container1">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search job or applicants..."
+      />
+
+      <div class="job">
+        <div class="applicant">
+          <h2>Junior Web Developer</h2>
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Position Applied For:</strong> Web Developer</p>
+          <button class="view-applicants" onclick="redirectToApplicantsPage()">
+            View Applicant
+          </button>
         </div>
       </div>
-      <div class="bio">
-        <h1>IT MAN</h1>
-        <p>HR</p>
-        <p>Tech Stack</p>
-        <button class="edit-button">Edit Bio</button>
-      </div>
-    </div>
-    <div class="container1">
+
       <div class="job">
-        <h1>Junior Web Developer</h1>
-        <p>Full Time</p>
-        <p>PHP, HTML, CSS, JS</p>
-        <p>Posted at 10:10 AM 29/03/24</p>
-        <button onclick="redirectToJob()">View</button>
-      </div>
-      <div class="job">
-        <h1>Junior Web Developer</h1>
-        <p>Full Time</p>
-        <p>PHP, HTML, CSS, JS</p>
-        <p>Posted at 10:10 AM 29/03/24</p>
-        <button onclick="redirectToJob()">View</button>
-      </div>
-      <div class="job">
-        <h1>Junior Web Developer</h1>
-        <p>Full Time</p>
-        <p>PHP, HTML, CSS, JS</p>
-        <p>Posted at 10:10 AM 29/03/24</p>
-        <button onclick="redirectToJob()">View</button>
-      </div>
-      <div class="job">
-        <h1>Junior Web Developer</h1>
-        <p>Full Time</p>
-        <p>PHP, HTML, CSS, JS</p>
-        <p>Posted at 10:10 AM 29/03/24</p>
-        <button onclick="redirectToJob()">View</button>
+        <div class="applicant">
+          <h2>Senior Software Engineer</h2>
+          <p><strong>Name:</strong> Alice Brown</p>
+          <p><strong>Position Applied For:</strong> Software Engineer</p>
+          <button class="view-applicants" onclick="redirectToApplicantsPage()">
+            View Applicant
+          </button>
+        </div>
       </div>
     </div>
     <script>
-      function redirectToJob() {
-        window.location.href = "emp-dashboard-published.html";
+      function redirectToApplicantsPage() {
+        window.location.href = "emp-dashboard-applicants.html";
       }
       document.addEventListener("DOMContentLoaded", function () {
         const editProfileButton = document.getElementById("editProfileButton");

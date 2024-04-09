@@ -187,8 +187,8 @@ nav {
 }
 .job {
   border-radius: 8px;
-  width: 420px;
-  height: 40%;
+  width: 20%;
+  height: 35%;
   border: 1px solid #555;
   padding: 10px;
   display: flex;
@@ -208,7 +208,7 @@ nav {
   background-color: #623fde;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 10px;
   font-size: 12px;
   font-weight: 500;

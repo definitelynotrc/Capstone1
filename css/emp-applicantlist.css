@@ -331,92 +331,66 @@ nav {
   text-decoration: none;
   cursor: pointer;
 }
-.rectangle {
-  width: 100%;
-  height: 300px;
 
-  position: relative;
-  background-image: url("/img/alvaro-pinot-czDvRp5V2b0-unsplash.jpg");
-  border-radius: 0px 0px 8px 8px;
+.container1 input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 15%;
 }
-
-.circle {
-  width: 200px;
-  height: 200px;
-  background-color: #623fde;
-  border-radius: 50%;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.circle img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.container {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  margin-left: 8%;
-}
-
-.bio {
-  display: flex;
-  flex-direction: column;
-  margin-top: 8%;
-  align-items: center;
-  justify-content: center;
-}
-
-.bio .edit-button {
-  background-color: #623fde;
-  color: #fff;
-  font-weight: 400;
+.container1 input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
   font-size: 16px;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.container1 input[type="text"]:hover {
+  border-color: #4a2d9e;
+}
+
+.container1 input[type="text"]:focus {
+  border-color: #4a2d9e;
+  outline: none;
 }
 .job {
-  border: 2px solid #0000;
-  border-radius: 8px;
+  margin-top: 1%;
+  margin-bottom: 1%;
   width: 50%;
-  margin-top: 20px;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-left: 30%;
+  margin-left: 15%;
+}
+
+.applicant h2 {
+  color: #623fde;
+  font-size: 1.2rem;
+}
+
+.applicant {
   background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
-}
-
-.job h1 {
-  font-size: 24px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   margin-bottom: 10px;
-  color: #623fde; /* Using the themed color for the heading */
 }
 
-.job p {
-  margin-bottom: 5px;
+.applicant p {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.job button {
-  background-color: #623fde; /* Using the themed color for the button background */
+.view-applicants {
+  background-color: #623fde;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease; /* Adding a smooth transition */
+  font-size: 0.8rem;
+  border-radius: 5px;
 }
 
-.job button:hover {
-  background-color: #4a2d9e; /* Darker shade on hover */
+.view-applicants:hover {
+  background-color: #4a2d9e;
 }

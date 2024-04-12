@@ -1,17 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var jobItems = document.querySelectorAll(".jobs");
-
-  jobItems.forEach(function (jobItem) {
-    jobItem.addEventListener("click", function () {
-      jobItems.forEach(function (item) {
-        item.classList.remove("job-clicked");
-      });
-
-      jobItem.classList.add("job-clicked");
-    });
-  });
-});
-document.addEventListener("DOMContentLoaded", function () {
   const editProfileButton = document.getElementById("editProfileButton");
   const editProfileModal = document.getElementById("editProfileModal");
   const editProfileCloseBtn = document.querySelector(
@@ -62,3 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+function contactus() {
+  window.location.href = "contact-us.html";
+}
+function aboutus() {
+  window.location.href = "about-us.html";
+}
+function logout() {
+  window.location.href = "index.html";
+}
+
+function studprof() {
+  window.location.href = "student-profile.html";
+}

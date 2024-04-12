@@ -49,3 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+function contactus() {
+  window.location.href = "contact-us.html";
+}
+function aboutus() {
+  window.location.href = "about-us.html";
+}
+function logout() {
+  window.location.href = "index.html";
+}
+
+function studprof() {
+  window.location.href = "student-profile.html";
+}

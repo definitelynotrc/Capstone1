@@ -151,6 +151,7 @@ nav {
   flex-direction: column;
   width: 100%;
 }
+
 .profile-dropdown {
   position: relative;
   display: inline-block;
@@ -223,6 +224,55 @@ nav {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+input[type="text"],
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #623fde;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4f2fc4;
+}
+
+.modal-content h2 {
+  color: #623fde;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.modal-content label {
+  color: #623fde;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modal-content input[type="text"] {
+  background-color: #f0f0f0;
+  color: #623fde;
+}
+
+.modal-content button[type="submit"] {
+  border: 2px solid #623fde;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #623fde;
+  color: #fff;
+}
 .close {
   color: #aaa;
   float: right;

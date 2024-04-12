@@ -131,6 +131,7 @@ nav {
   text-decoration: none;
   text-align: center;
 }
+
 .profile-dropdown {
   position: relative;
   display: inline-block;
@@ -203,6 +204,55 @@ nav {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+input[type="text"],
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #623fde;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4f2fc4;
+}
+
+.modal-content h2 {
+  color: #623fde;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.modal-content label {
+  color: #623fde;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modal-content input[type="text"] {
+  background-color: #f0f0f0;
+  color: #623fde;
+}
+
+.modal-content button[type="submit"] {
+  border: 2px solid #623fde;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #623fde;
+  color: #fff;
+}
 .close {
   color: #aaa;
   float: right;
@@ -434,7 +484,7 @@ nav {
 }
 
 .right-container {
-  width: 800px;
+  width: 60%;
   max-height: 1000px;
   display: flex;
   flex-direction: column;
@@ -442,7 +492,7 @@ nav {
   margin-right: 2%;
 }
 .job-desc {
-  height: 30%;
+  height: 60%;
   border-radius: 10px;
   width: 100%;
   padding: 20px;
@@ -450,7 +500,7 @@ nav {
   overflow: auto;
 }
 .map {
-  max-height: 50%;
+  height: 40vh;
   width: 100%;
   padding: 10px;
 }
@@ -685,4 +735,60 @@ nav {
 .footer-copyright-link {
   color: #fff;
   text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 450px;
+    position: relative;
+  }
+
+  .footer-wave-svg {
+    height: 50px;
+  }
+
+  .footer-content-column {
+    width: 24.99%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .left-container {
+    width: 900px;
+  }
+  .apply-btn {
+    width: 150px;
+    margin-left: 20%;
+  }
+  .right-container {
+    width: 1000px;
+  }
+  .map {
+    height: 60vh;
+  }
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 450px;
+    position: relative;
+  }
+
+  .footer-wave-svg {
+    height: 50px;
+  }
+
+  .footer-content-column {
+    width: 24.99%;
+  }
 }

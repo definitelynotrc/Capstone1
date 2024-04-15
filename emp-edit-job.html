@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/emp-dashboardpending.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/emp-dashboard1.css" />
   </head>
   <body>
     <nav>
@@ -134,44 +141,6 @@
         </div>
       </div>
     </nav>
-    <div id="editProfileModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Edit Profile</h2>
-        <form id="profileForm">
-          <label for="phoneNumber">Phone Number:</label>
-          <input type="text" id="phoneNumber" name="phoneNumber" required />
-          <label for="college">College:</label>
-          <input type="text" id="college" name="college" required />
-          <label for="campus">Campus:</label>
-          <input type="text" id="campus" name="campus" required />
-          <label for="address">Address:</label>
-          <input type="text" id="address" name="address" required />
-          <label for="department">Department:</label>
-          <input type="text" id="department" name="department" required />
-          <button type="submit">Save</button>
-        </form>
-      </div>
-    </div>
-    <div id="notificationModal" class="notif-modal">
-      <div class="notif-modal-content">
-        <div class="notif-header">
-          <h2>Notifications</h2>
-        </div>
-        <div class="notif">
-          <img src="./img/itman.png" alt="" />
-          <div class="notif-text">
-            <p>
-              Clarence Ariel V. Pamilar wants to apply for :
-              <b> Junior Web Developer</b>
-            </p>
-
-            <p>Created at 10:10 AM 29/03/24</p>
-          </div>
-        </div>
-        <span class="notif-close">&times;</span>
-      </div>
-    </div>
     <div class="side-nav">
       <a href="dashboard.html" style="text-decoration: none">
         <div class="nav-logo">
@@ -198,71 +167,17 @@
           <h1>Interlink</h1>
         </div>
       </a>
-      <div class="snav"><a href="emp-dashboard-POST.html">Post a Job</a></div>
+      <div class="snav active">
+        <a href="emp-dashboard-POST.html">Post a Job</a>
+      </div>
       <div class="snav">
         <a href="emp-dashboard-published.html">Published Jobs</a>
       </div>
-      <div class="snav active">
+      <div class="snav">
         <a href="emp-dashboard-pending.html">Pending Jobs</a>
       </div>
       <div class="snav">
         <a href="emp-applicantlist.html">Applicants</a>
-      </div>
-    </div>
-    <div class="container">
-      <div class="job">
-        <h3>Web Developer</h3>
-        <p>Full Time</p>
-        <p>Location: Cabanatuan City</p>
-        <p>Qualifications: Studying at NEUST</p>
-        <p>Skills: HTML, CSS, JS, PHP</p>
-        <p>Posted: 2024-09-01</p>
-        <p class="status">Status: <b>Waiting fo verification</b></p>
-      </div>
-      <div class="job">
-        <h3>Web Developer</h3>
-        <p>Full Time</p>
-        <p>Location: Cabanatuan City</p>
-        <p>Qualifications: Studying at NEUST</p>
-        <p>Skills: HTML, CSS, JS, PHP</p>
-        <p>Posted: 2024-09-01</p>
-        <p class="status">Status: <b>Waiting fo verification</b></p>
-      </div>
-      <div class="job">
-        <h3>Web Developer</h3>
-        <p>Full Time</p>
-        <p>Location: Cabanatuan City</p>
-        <p>Qualifications: Studying at NEUST</p>
-        <p>Skills: HTML, CSS, JS, PHP</p>
-        <p>Posted: 2024-09-01</p>
-        <p class="status">Status: <b>Waiting fo verification</b></p>
-      </div>
-      <div class="job">
-        <h3>Web Developer</h3>
-        <p>Full Time</p>
-        <p>Location: Cabanatuan City</p>
-        <p>Qualifications: Studying at NEUST</p>
-        <p>Skills: HTML, CSS, JS, PHP</p>
-        <p>Posted: 2024-09-01</p>
-        <p class="status">Status: <b>Waiting fo verification</b></p>
-      </div>
-      <div class="job">
-        <h3>Web Developer</h3>
-        <p>Full Time</p>
-        <p>Location: Cabanatuan City</p>
-        <p>Qualifications: Studying at NEUST</p>
-        <p>Skills: HTML, CSS, JS, PHP</p>
-        <p>Posted: 2024-09-01</p>
-        <p class="status">Status: <b>Waiting fo verification</b></p>
-      </div>
-      <div class="job">
-        <h3>Web Developer</h3>
-        <p>Full Time</p>
-        <p>Location: Cabanatuan City</p>
-        <p>Qualifications: Studying at NEUST</p>
-        <p>Skills: HTML, CSS, JS, PHP</p>
-        <p>Posted: 2024-09-01</p>
-        <p class="status">Status: <b>Waiting fo verification</b></p>
       </div>
     </div>
 

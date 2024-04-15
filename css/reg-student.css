@@ -58,6 +58,9 @@ body {
 
 .left form {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .left label {
@@ -90,13 +93,14 @@ body {
   color: #fff;
   height: 60px;
   padding: 0 15px;
+  margin-top: 2%;
   border: none;
   border-radius: 16px;
   cursor: pointer;
-  width: 449px;
+  width: 400px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  margin-left: 6%;
+  margin-left: 12%;
 }
 
 .left button:hover {
@@ -129,12 +133,15 @@ body {
   text-align: center;
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   justify-content: center;
   align-items: center;
-  margin-right: 30%;
+  margin-left: 25%;
+  width: 100%;
 }
 .footer {
+  margin-top: 20%;
   background-color: #492bc2;
   color: #fff;
 }

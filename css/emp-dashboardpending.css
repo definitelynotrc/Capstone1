@@ -398,9 +398,10 @@ button[type="submit"]:hover {
   padding: 20px;
 }
 .job {
+  background-color: #f5f5f5;
   border-radius: 8px;
-  width: 420px;
-  height: 40%;
+  width: 20%;
+  height: 35%;
   border: 1px solid #555;
   padding: 10px;
   display: flex;

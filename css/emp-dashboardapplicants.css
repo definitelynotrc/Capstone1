@@ -364,6 +364,12 @@ button[type="submit"]:hover {
   margin-left: 10px;
   padding: 10px;
 }
+.snav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
 .snav.active {
   background-color: white;
   color: black;
@@ -371,11 +377,6 @@ button[type="submit"]:hover {
 }
 .snav.active a {
   color: black;
-}
-.snav {
-  background-color: white;
-  color: black;
-  border-radius: 8px 0 0 8px;
 }
 
 .snav:hover {

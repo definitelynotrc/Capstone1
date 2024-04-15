@@ -10,28 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "#notificationModal .notif-close"
   );
 
-  // Show edit profile modal when "Edit Profile" button is clicked
-  editProfileButton.addEventListener("click", function () {
-    editProfileModal.style.display = "block";
-  });
-
-  // Close edit profile modal when the close button is clicked
-  editProfileCloseBtn.addEventListener("click", function () {
-    editProfileModal.style.display = "none";
-  });
-
-  // Close edit profile modal when clicking outside of it
-  window.addEventListener("click", function (event) {
-    if (event.target === editProfileModal) {
-      editProfileModal.style.display = "none";
-    }
-  });
-
-  // Prevent the edit profile modal from closing when clicking inside the modal content
-  editProfileModal.addEventListener("click", function (event) {
-    event.stopPropagation();
-  });
-
   // Show notification modal when notification icon is clicked
   notificationIcon.onclick = function () {
     notificationModal.style.display = "block";

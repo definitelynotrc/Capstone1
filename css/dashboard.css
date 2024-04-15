@@ -270,18 +270,16 @@ button[type="submit"]:hover {
   display: none;
   position: absolute;
   z-index: 1;
-  bottom: 60px; /* Adjust the distance from the bottom */
-  right: 20px; /* Adjust the distance from the right */
-  width: 300px; /* Set the width of the modal */
-  max-height: 400px; /* Set the maximum height of the modal */
-  overflow-y: auto; /* Enable vertical scrolling if needed */
+  bottom: 60px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-color: #fefefe;
   padding: 20px;
 }
-
-/* Add additional styling for notification content as needed */
 
 .notif-modal-content {
   display: flex;
@@ -492,12 +490,12 @@ button[type="submit"]:hover {
   margin-right: 2%;
 }
 .job-desc {
-  height: 60%;
+  max-height: 30%;
   border-radius: 10px;
   width: 100%;
   padding: 20px;
   background-color: #f7f6f6;
-  overflow: auto;
+  overflow-y: scroll;
 }
 .map {
   height: 40vh;

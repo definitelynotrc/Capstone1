@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+
+    <title>Interlink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1a1c1e",
+              footer: "#0e0f0f",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .header {
+        background: linear-gradient(180deg, #fff 1.66%, #999 94.46%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bodybg {
+        background: linear-gradient(125deg, #04101c 11.36%, #222426 92.63%);
+      }
+      .bg-footer {
+        background-color: #04101c;
+      }
+
+      .logo button {
+        color: #ffffff;
+      }
+
+      .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .footer-section li {
+        margin-bottom: 1rem;
+      }
+
+      .footer-section a {
+        color: #ffffff;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .footer-section a:hover {
+        color: #b100ff;
+      }
+    </style>
+  </head>
+  <body class="bodybg text-white font-poppins">
+    <nav
+      class="w-full text-white flex flex-row justify-between px-20 py-4 items-center"
+    >
+      <div class="logo">
+        <h1 class="text-2xl font-semibold">InterLink</h1>
+      </div>
+      <div class="link">
+        <ul class="flex gap-5 text-sm items-center text-nowrap lg:gap-10">
+          <li class="hidden lg:block"><a href="about.html">About</a></li>
+          <li>
+            <a
+              href="login.html"
+              class="bg-gradient-to-r from-[#7E74EF] to-[#950E8F] px-5 py-[8%] rounded-md hover:from-[#950E8F] hover:to-[#7E74EF] hover:text-white transition duration-300 ease-in-out"
+              >Log In
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header
+      class="w-full mt-20 lg:mt-0 lg:h-[90vh] flex gap-10 flex-col justify-center items-center"
+    >
+      <h1 class="header text-xl lg:text-5xl font-bold lg:w-1/2 text-center">
+        Charting Journeys, Igniting Passions, and Sculpting Futures.
+      </h1>
+      <button
+        class="bg-gradient-to-r from-[#7E74EF] to-[#950E8F] px-10 py-3 rounded-md hover:from-[#950E8F] hover:to-[#7E74EF] hover:text-white transition duration-300 ease-in-out font-semibold"
+      >
+        Get Started
+      </button>
+    </header>
+    <section class="w-full flex flex-col justify-center items-center py-10">
+      <h2 class="text-3xl font-semibold">Our Services</h2>
+      <div
+        class="px-10 flex flex-col lg:flex-row justify-between items-center gap-10 mt-10 mx-auto text-center"
+      >
+        <div class="lg:max-w-[33%]">
+          <img
+            class="lg:w-[100%] lg:h-[360px]"
+            src="./img/8046555-removebg-preview.png"
+            alt=""
+          />
+          <h3 class="text-2xl font-semibold text-nowrap">Career Counselling</h3>
+          <p class="text-lg">
+            Our experts will help you choose the right career path for you.
+          </p>
+        </div>
+        <div class="lg:max-w-[33%]">
+          <img
+            class="lg:w-[100%] lg:h-[360px]"
+            src="./img/9027297-removebg-preview.png"
+            alt=""
+          />
+          <h3 class="text-2xl font-semibold">Skill Development</h3>
+          <p class="text-lg">
+            We provide you with the best On-The-Job Training position to develop
+            your skills.
+          </p>
+        </div>
+        <div class="lg:max-w-[33%]">
+          <img
+            src="./img/6306474-removebg-preview.png"
+            class="lg:w-[100%] lg:h-[360px]"
+          />
+          <h3 class="text-2xl font-semibold">Job Placement</h3>
+          <p class="text-lg">
+            We help you get placed in the best companies in the industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-footer w-full text-white py-10">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-start px-6"
+      >
+        <div class="logo mb-8">
+          <h1 class="text-3xl font-extrabold tracking-wide mb-4">InterLink</h1>
+          <button
+            class="bg-gradient-to-r from-[#7E74EF] to-[#950E8F] px-8 py-3 rounded-md text-lg font-semibold hover:from-[#950E8F] hover:to-[#7E74EF] transition duration-300 ease-in-out"
+          >
+            Get Started
+          </button>
+        </div>
+        <div class="footer-section mb-8">
+          <h1 class="text-lg font-semibold mb-4">COMPANY</h1>
+          <ul>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section mb-8">
+          <h1 class="text-lg font-semibold mb-4">LEGAL</h1>
+          <ul>
+            <li><a href="privacy.html">Privacy Notice</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-section mb-8">
+          <h1 class="text-lg font-semibold mb-4">QUICK LINKS</h1>
+          <ul>
+            <li><a href="support.html">Support Center</a></li>
+            <li><a href="login.html">Register/Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full flex flex-row justify-center items-center mt-10">
+        <p class="text-sm opacity-70">
+          &copy; 2024 InterLink. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

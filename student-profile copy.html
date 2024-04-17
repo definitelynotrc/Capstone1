@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1a1c1e",
+              bgonform: "#060606",
+              footer: "#0e0f0f",
+              slate: {
+                300: "#8892b0",
+                600: "#1f2937",
+              },
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="grid grid-cols-12 bg-gray-100">
+    <aside
+      class="col-span-1 text-white h-screen bg-black flex flex-col items-center justify-start gap-10"
+    >
+      <div class="py-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#ACB2C0"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-codesandbox"
+        >
+          <path
+            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+          ></path>
+          <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+          <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+          <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" x2="12" y1="22.08" y2="12"></line>
+        </svg>
+      </div>
+      <div class="flex flex-col gap-10">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#808185"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-briefcase-business"
+          >
+            <path d="M12 12h.01"></path>
+            <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+            <path d="M22 13a18.15 18.15 0 0 1-20 0"></path>
+            <rect width="20" height="14" x="2" y="6" rx="2" />
+          </svg>
+        </span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ACB2C0"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-file-text"
+          >
+            <path
+              d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+            ></path>
+            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+            <path d="M10 9H8"></path>
+            <path d="M16 13H8"></path>
+            <path d="M16 17H8"></path>
+          </svg>
+        </span>
+      </div>
+    </aside>
+    <main class="col-span-11">
+      <nav class="flex justify-end p-8 h-40px gap-14 items-center ml-[5%]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-message-square-more"
+        >
+          <path
+            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+          ></path>
+          <path d="M8 10h.01"></path>
+          <path d="M12 10h.01"></path>
+          <path d="M16 10h.01"></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-bell"
+        >
+          <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+          <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+        </svg>
+
+        <div class="h-10 w-10 bg-gray-300 rounded-full"></div>
+      </nav>
+      <section>
+        <div
+          class="w-full h-[200px] bg-gray-300 flex items-center justify-center"
+        >
+          <div
+            class="h-36 w-36 bg-white rounded-full border-4 border-white flex justify-center items-center mt-[15%]"
+          ></div>
+        </div>
+      </section>
+
+      <div
+        class="w-[60%] flex flex-col items-center justify-center mt-[7%] gap-[20px] mx-auto"
+      >
+        <div class="flex flex-col items-center">
+          <h3 class="text-lg font-semibold">Clarence Arel V. Pamilar</h3>
+          <p class="text-gray-600">BSIT</p>
+        </div>
+        <div class="w-full bg-dark p-4 rounded-lg">
+          <h3 class="text-lg font-semibold text-white">Skills</h3>
+          <div class="flex flex-wrap gap-4 mt-2">
+            <div class="bg-slate-300 py-2 px-4 rounded-md text-white">HTML</div>
+            <div class="bg-slate-300 py-2 px-4 rounded-md text-white">CSS</div>
+            <div class="bg-slate-300 py-2 px-4 rounded-md text-white">
+              JavaScript
+            </div>
+            <div class="bg-slate-300 py-2 px-4 rounded-md text-white">
+              React
+            </div>
+            <div class="bg-slate-300 py-2 px-4 rounded-md text-white">
+              Node.js
+            </div>
+            <div class="bg-slate-300 py-2 px-4 rounded-md text-white">
+              UI/UX
+            </div>
+            <div class="bg-slate-300 py-2 px-4 rounded-md text-white">
+              Data Analysis
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

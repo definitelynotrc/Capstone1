@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <title>LogInPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1a1c1e",
+              bgonform: "#060606",
+              footer: "#0e0f0f",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .bodybg {
+        background: linear-gradient(125deg, #04101c 11.36%, #222426 92.63%);
+      }
+
+      .custom-input {
+        border-radius: 4px;
+        border: 1px solid rgba(234, 234, 234, 0.23);
+        background: rgba(255, 255, 255, 0.07);
+        padding: 0.5rem;
+        transition: border-color 0.3s ease-in-out;
+      }
+
+      .custom-button {
+        border-radius: 8px;
+        background: linear-gradient(90deg, #7e74ef 0%, #e50ddc 100%);
+        color: white;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .custom-button:hover {
+        background-color: #950e8f;
+      }
+      .bgonform {
+        background-color: #060606;
+      }
+      .custom-border {
+        border-top: 1px solid #acb2c0;
+        border-bottom: 1px solid #acb2c0;
+        border-left: 1px solid#ACB2C0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      .custom-border-right {
+        border-top: 1px solid #acb2c0;
+        border-bottom: 1px solid #acb2c0;
+        border-right: 1px solid#ACB2C0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-white font-poppins">
+    <nav class="w-full p-4">
+      <h1 class="text-3xl text-white text-center font-semibold">InterLink</h1>
+    </nav>
+    <section
+      class="flex flex-row items-center h-[90svh] justify-center mx-auto py-5 px-20 w-[80%]"
+    >
+      <div class="bgonform lg:w-1/2 flex h-full custom-border p-20">
+        <div class="w-full h-full">
+          <div class="flex justify-center items-center flex-col gap-4 mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-codesandbox text-white"
+            >
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+              ></path>
+              <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+              <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+              <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" x2="12" y1="22.08" y2="12"></line>
+            </svg>
+            <h1 class="text-xl font-semibold text-white">Welcome back!</h1>
+          </div>
+          <form class="flex flex-col gap-4">
+            <label for="email" class="text-white">Email Address:</label>
+            <input type="email" class="custom-input focus:border-white" />
+            <label for="password" class="text-white">Password</label>
+            <input type="password" class="custom-input focus:border-white" />
+            <button
+              type="submit"
+              class="custom-button"
+              onclick="redirectToLanding(event)"
+            >
+              Log In
+            </button>
+            <span class="text-sm text-white"
+              >Forgot Password?
+              <a href="#" class="text-indigo-500">Click here</a></span
+            >
+          </form>
+          <div class="mt-4 flex flex-col gap-5">
+            <p class="text-white text-center">Or sign in using</p>
+            <button
+              class="bg-red-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-red-700 transition duration-300 w-[50%] mx-auto"
+            >
+              Google
+            </button>
+            <span class="text-sm text-white text-center"
+              >Dont Have an Account?
+              <a href="registration-company.html" class="text-indigo-500"
+                >Register Now!</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 flex h-full custom-border-right">
+        <div class="w-full h-full">
+          <img
+            src="../img/6224495.jpg"
+            alt=""
+            class="w-full h-full object-cover rounded-md"
+          />
+        </div>
+      </div>
+    </section>
+    <script>
+      function redirectToLanding(event) {
+        event.preventDefault();
+        window.location.href = "company-applicant.html";
+      }
+    </script>
+  </body>
+</html>

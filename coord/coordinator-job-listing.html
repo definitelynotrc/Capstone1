@@ -15,11 +15,13 @@
         theme: {
           extend: {
             colors: {
-              dark: "#1a1c1e",
+              dark: "#030303",
               bgonform: "#060606",
               footer: "#0e0f0f",
               jobdesc: "#F5F6F7",
-              jobpost: "#61677A",
+              jobpost: "#030303",
+              bodybg: "#F8F8F8",
+              svgbox: "#1E1E1E",
             },
             fontFamily: {
               poppins: ["Poppins", "sans-serif"],
@@ -30,8 +32,8 @@
     </script>
     <style></style>
   </head>
-  <body class="font-poppins">
-    <aside class="flex flex-col w-[7%] bg-black fixed h-[100svh]">
+  <body class="font-poppins bg-bodybg">
+    <aside class="flex flex-col w-[7%] bg-dark fixed h-[100svh]">
       <div class="flex flex-col h-[100svh] p-10">
         <a href="">
           <svg
@@ -40,7 +42,7 @@
             height="35"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#ACB2C0"
+            stroke="#ffff"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -59,67 +61,105 @@
         <div>
           <ul class="flex flex-col justify-evenly gap-[40px]">
             <li>
-              <a href="coordinator-student-list.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ACB2C0"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-users-round"
-                >
-                  <path d="M18 21a8 8 0 0 0-16 0" />
-                  <circle cx="10" cy="8" r="5" />
-                  <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
-                </svg>
-              </a>
+              <div
+                class="w-[40px] h-[40px] bg-svgbox flex items-center justify-center rounded-md"
+              >
+                <a href="coordinator-student-list.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users-round"
+                  >
+                    <path d="M18 21a8 8 0 0 0-16 0" />
+                    <circle cx="10" cy="8" r="5" />
+                    <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+                  </svg>
+                </a>
+              </div>
             </li>
             <li>
-              <a href="coordinator-job-listing.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#808185"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-briefcase-business"
-                >
-                  <path d="M12 12h.01" />
-                  <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                  <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                  <rect width="20" height="14" x="2" y="6" rx="2" />
-                </svg>
-              </a>
+              <div
+                class="w-[40px] h-[40px] bg-white flex items-center justify-center rounded-md"
+              >
+                <a href="coordinator-job-listing.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-briefcase-business"
+                  >
+                    <path d="M12 12h.01" />
+                    <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                    <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                    <rect width="20" height="14" x="2" y="6" rx="2" />
+                  </svg>
+                </a>
+              </div>
             </li>
             <li>
-              <a href="coordinator-deployed-student.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#808185"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-clipboard-check"
-                >
-                  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-                  <path
-                    d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
-                  />
-                  <path d="m9 14 2 2 4-4" />
-                </svg>
-              </a>
+              <div
+                class="w-[40px] h-[40px] bg-svgbox flex items-center justify-center rounded-md"
+              >
+                <a href="coordinator-deployed-student.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clipboard-check"
+                  >
+                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                    <path
+                      d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                    />
+                    <path d="m9 14 2 2 4-4" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                class="w-[40px] h-[40px] bg-svgbox flex items-center justify-center rounded-md"
+              >
+                <a href="coordinator-pending-companies.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-list-todo"
+                  >
+                    <rect x="3" y="5" width="6" height="6" rx="1" />
+                    <path d="m3 17 2 2 4-4" />
+                    <path d="M13 6h8" />
+                    <path d="M13 12h8" />
+                    <path d="M13 18h8" />
+                  </svg>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -127,29 +167,10 @@
     </aside>
     <nav class="flex justify-end p-8 h-40px gap-14 items-center ml-[5%]">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-message-square-more"
-      >
-        <path
-          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-        ></path>
-        <path d="M8 10h.01"></path>
-        <path d="M12 10h.01"></path>
-        <path d="M16 10h.01"></path>
-      </svg>
-      <svg
         id="openModalBtn"
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="20"
+        height="20"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -192,8 +213,8 @@
         <svg
           id="profileBtn"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -238,7 +259,7 @@
     </nav>
     <section class="ml-[6%]">
       <div class="mx-auto w-[80%] min-h-[85svh] h-[85svh] flex flex-row">
-        <div class="w-1/2 h-full bg-jobdesc">
+        <div class="w-1/2 h-full bg-white rounded-md">
           <div class="p-5 h-full overflow-auto">
             <p>
               Job Title: <strong> Junior Front-End Developer </strong
@@ -267,7 +288,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/2 h-full bg-jobpost">
+        <div class="w-1/2 h-full bg-jobpost rounded-md">
           <div class="h-[10%] px-5 py-2">
             <input
               type="search"
@@ -281,17 +302,18 @@
             >
               <div class="w-[15%] flex justify-center items-center">
                 <img
-                  src="./img/370125850_1441487746410989_2301942037703186706_n.png "
+                  src="../img/370125850_1441487746410989_2301942037703186706_n.png "
                   alt=""
                   class="w-[60px] h-[60px] rounded-full"
                 />
               </div>
               <div class="w-[65%] flex flex-col justify-center">
-                <p class="font-light text-sm">ACCENTURE</p>
+                <p class="font-normal text-sm">ACCENTURE</p>
                 <h3 class="font-semibold text-lg">IT Security Specialist</h3>
-                <p class="font-light text-xs">
+                <p class="font-normal text-xs">
                   Brgy. Sumacab Este, Cabanatuan City, Nueva Ecija
                 </p>
+                <span class="text-xs font-light">3 available</span>
               </div>
               <div class="w-[15%] flex items-end justify-center p-6">
                 <svg
@@ -316,7 +338,7 @@
               class="hidden h-[75%] w-full bg-slate-50 gap-2 items-center"
             >
               <div class="w-full px-3 py-1">
-                <div class="h-[50svh]">
+                <div class="h-[50svh] rounded-lg overflow-hidden shadow-lg">
                   <gmp-map
                     center="15.454477310180664,120.96682739257812"
                     zoom="14"
@@ -329,9 +351,9 @@
                     ></gmp-advanced-marker>
                   </gmp-map>
                 </div>
-                <div>
+                <div class="mt-3">
                   <button
-                    class="bg-dark text-white font-semibold p-3 rounded-md"
+                    class="bg-dark hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
                   >
                     ASSIGN
                   </button>
@@ -343,7 +365,7 @@
             >
               <div class="w-[15%] flex justify-center items-center">
                 <img
-                  src="./img/VXI.png "
+                  src="../img/VXI.png "
                   alt=""
                   class="w-[60px] h-[60px] rounded-full"
                 />
@@ -378,7 +400,7 @@
             >
               <div class="w-[15%] flex justify-center items-center">
                 <img
-                  src="./img/PLDT.png "
+                  src="../img/PLDT.png "
                   alt=""
                   class="w-[60px] h-[60px] rounded-full"
                 />
@@ -413,7 +435,7 @@
             >
               <div class="w-[15%] flex justify-center items-center">
                 <img
-                  src="./img/alorica.png "
+                  src="../img/alorica.png "
                   alt=""
                   class="w-[60px] h-[60px] rounded-full"
                 />
@@ -448,7 +470,7 @@
             >
               <div class="w-[15%] flex justify-center items-center">
                 <img
-                  src="./img/amazon.png "
+                  src="../img/amazon.png "
                   alt=""
                   class="w-[60px] h-[60px] rounded-full"
                 />
@@ -482,8 +504,8 @@
         </div>
       </div>
     </section>
-    <script src="./js/jobdesc.js"></script>
-    <script src="./js/notif.js"></script>
-    <script src="./js/profile.js"></script>
+    <script src="../js/jobdesc.js"></script>
+    <script src="../js/notif.js"></script>
+    <script src="../js/profile.js"></script>
   </body>
 </html>

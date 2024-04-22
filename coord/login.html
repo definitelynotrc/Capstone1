@@ -24,7 +24,7 @@
     </script>
     <style>
       .bodybg {
-        background: linear-gradient(125deg, #04101c 11.36%, #222426 92.63%);
+        background-image: url("../img/bg-grid.png");
       }
 
       .custom-input {
@@ -65,7 +65,7 @@
       }
     </style>
   </head>
-  <body class="bodybg text-white font-poppins">
+  <body class="bodybg bg-dark bg-repeat text-white font-poppins">
     <nav class="w-full p-4">
       <h1 class="text-3xl text-white text-center font-semibold">InterLink</h1>
     </nav>
@@ -98,7 +98,10 @@
             </svg>
             <h1 class="text-xl font-semibold text-white">Welcome back!</h1>
           </div>
-          <form class="flex flex-col gap-4">
+          <form
+            class="flex flex-col gap-4"
+            action="coordinator-student-list.html"
+          >
             <label for="email" class="text-white">Email Address:</label>
             <input type="email" class="custom-input focus:border-white" />
             <label for="password" class="text-white">Password</label>
@@ -122,7 +125,7 @@
       <div class="lg:w-1/2 flex h-full custom-border-right">
         <div class="w-full h-full">
           <img
-            src="./img/6224495.jpg"
+            src="../img/6224495.jpg"
             alt=""
             class="w-full h-full object-cover rounded-md"
           />

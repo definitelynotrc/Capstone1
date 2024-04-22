@@ -24,7 +24,7 @@
     </script>
     <style>
       .bodybg {
-        background: linear-gradient(125deg, #04101c 11.36%, #222426 92.63%);
+        background-image: url("../img/bg-grid.png");
       }
 
       .custom-input {
@@ -65,7 +65,7 @@
       }
     </style>
   </head>
-  <body class="bg-dark text-white font-poppins">
+  <body class="bodybg bg-dark bg-repeat text-white font-poppins">
     <nav class="w-full p-4">
       <h1 class="text-3xl text-white text-center font-semibold">InterLink</h1>
     </nav>
@@ -98,18 +98,12 @@
             </svg>
             <h1 class="text-xl font-semibold text-white">Welcome back!</h1>
           </div>
-          <form class="flex flex-col gap-4">
+          <form class="flex flex-col gap-4" action="company-job-posting.html">
             <label for="email" class="text-white">Email Address:</label>
             <input type="email" class="custom-input focus:border-white" />
             <label for="password" class="text-white">Password</label>
             <input type="password" class="custom-input focus:border-white" />
-            <button
-              type="submit"
-              class="custom-button"
-              onclick="redirectToLanding(event)"
-            >
-              Log In
-            </button>
+            <button type="submit" class="custom-button">Log In</button>
             <span class="text-sm text-white"
               >Forgot Password?
               <a href="#" class="text-indigo-500">Click here</a></span
@@ -122,11 +116,11 @@
             >
               Google
             </button>
-            <span class="text-sm text-white text-center"
-              >Dont Have an Account?
-              <a href="registration-company.html" class="text-indigo-500"
-                >Register Now!</a
-              ></span
+            <span
+              >Dont Have An Account?
+              <a href="registration-company.html" class="text-indigo-500">
+                Click Here
+              </a></span
             >
           </div>
         </div>
@@ -141,11 +135,5 @@
         </div>
       </div>
     </section>
-    <script>
-      function redirectToLanding(event) {
-        event.preventDefault();
-        window.location.href = "company-applicant.html";
-      }
-    </script>
   </body>
 </html>

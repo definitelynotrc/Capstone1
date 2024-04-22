@@ -185,25 +185,6 @@
 
     <nav class="flex justify-end p-8 h-40px gap-14 items-center ml-[5%]">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-message-square-more"
-      >
-        <path
-          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-        ></path>
-        <path d="M8 10h.01"></path>
-        <path d="M12 10h.01"></path>
-        <path d="M16 10h.01"></path>
-      </svg>
-      <svg
         id="openModalBtn"
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -310,35 +291,68 @@
       </div>
     </nav>
     <section class="ml-[7%] py-5">
+      <header class="text-black py-6">
+        <h1 class="text-3xl font-semibold text-center">
+          Post Your Job Opening
+        </h1>
+      </header>
+
       <div
-        class="rounded-md mx-auto w-[95%] min-h-[85svh] flex flex-col p-4 gap-3 bg-bgonform"
+        class="max-w-lg mx-auto bg-bgonform text-white p-5 rounded-lg shadow-md"
       >
-        <div>
-          <form
-            class="flex flex-col px-[175px] py-[50px] w-full gap-5 text-white"
-          >
-            <h1 class="text-white text-center font-semibold text-4xl mb-10">
-              POST AN OPENING
-            </h1>
-            <label>Job Title:</label>
-            <input type="text" class="h-[52px]" />
+        <h2 class="text-2xl font-semibold mb-1 text-center">Job Details</h2>
+        <form>
+          <div class="">
+            <label for="job_title" class="block text-white font-semibold mb-1"
+              >Job Title:</label
+            >
+            <input
+              type="text"
+              id="job_title"
+              name="job_title"
+              class="h-10 w-full px-4 py-2 bg-gray-200 border rounded-md text-white focus:outline-none"
+              required
+            />
+          </div>
 
-            <label>Job Location:</label>
-            <input type="text" class="h-[52px]" />
+          <div class="mb-4">
+            <label
+              for="job_location"
+              class="block text-white font-semibold mb-1"
+              >Job Location:</label
+            >
+            <input
+              type="text"
+              id="job_location"
+              name="job_location"
+              class="h-10 w-full px-4 py-2 bg-gray-200 border rounded-md text-white focus:outline-none"
+              required
+            />
+          </div>
 
-            <label>Job Descripion:</label>
-            <textarea class="h-[352px]"></textarea>
-          </form>
-        </div>
-
-        <div class="flex justify-end items-start w-[90%] mx-auto p-5">
-          <button
-            class="rounded-md bg-white w-[160px] h-[49px] text-black font-semibold text-2xl"
-            onclick="redirectToJobPosting(event)"
-          >
-            NEXT
-          </button>
-        </div>
+          <div class="mb-6">
+            <label
+              for="job_description"
+              class="block text-white font-semibold mb-1"
+              >Job Description:</label
+            >
+            <textarea
+              id="job_description"
+              name="job_description"
+              class="w-full px-4 py-2 bg-gray-200 border rounded-md text-white focus:outline-none focus:border-blue-400"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <div class="flex justify-end items-start w-[90%] mx-auto p-5">
+            <button
+              class="rounded-md bg-white px-5 py-2 text-black font-semibold text-1xl"
+              onclick="redirectToJobPosting(event)"
+            >
+              NEXT
+            </button>
+          </div>
+        </form>
       </div>
     </section>
     <script>

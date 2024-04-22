@@ -178,25 +178,6 @@
 
     <nav class="flex justify-end p-8 h-40px gap-14 items-center ml-[5%]">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-message-square-more"
-      >
-        <path
-          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-        ></path>
-        <path d="M8 10h.01"></path>
-        <path d="M12 10h.01"></path>
-        <path d="M16 10h.01"></path>
-      </svg>
-      <svg
         id="openModalBtn"
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -304,37 +285,118 @@
     </nav>
     <section class="ml-[7%] py-5">
       <div
-        class="rounded-md mx-auto w-[95%] min-h-[85svh] flex flex-col p-4 gap-3 bg-bgonform"
+        class="max-w-lg mx-auto mt-8 bg-bgonform text-white p-8 rounded-lg shadow-md"
       >
-        <div>
-          <form
-            class="flex flex-col px-[175px] py-[50px] w-full gap-5 text-white"
+        <h2 class="text-2xl font-semibold mb-6 text-center">
+          Additional Details
+        </h2>
+        <form class="flex flex-col gap-1">
+          <label for="monthly_allowance" class="text-white"
+            >Monthly Allowance(Optional):</label
           >
-            <label>Monthly Allowance</label>
-            <input type="text" class="h-[52px] text-black" />
+          <input
+            type="text"
+            id="monthly_allowance"
+            name="monthly_allowance"
+            class="h-10 px-4 bg-gray-200 border bg-gray-200rounded-md text-black focus:outline-none"
+            required
+          />
 
-            <label>Start Date:</label>
-            <input type="date" class="h-[52px] text-black" />
+          <label for="start_date" class="text-white">Start Date:</label>
+          <input
+            type="date"
+            id="start_date"
+            name="start_date"
+            class="h-10 px-4bg-gray-200 border border-gray-700 rounded-md text-black focus:outline-none"
+            required
+          />
 
-            <label>End Date:</label>
-            <input type="date" class="h-[52px] text-black" />
+          <label for="end_date" class="text-white">End Date:</label>
+          <input
+            type="date"
+            id="end_date"
+            name="end_date"
+            class="h-10 px-4 bg-gray-200 border border-gray-700 rounded-md text-black focus:outline-none"
+            required
+          />
 
-            <label>Skills</label>
-            <input type="text" class="h-[52px] text-black" />
-            <label>Available</label>
-            <input type="number" class="h-[52px] text-black" />
-          </form>
-        </div>
+          <div class="relative">
+            <label for="skills" class="text-white">Skills:</label>
+            <input
+              type="text"
+              id="skills"
+              name="skills"
+              class="h-10 px-4 bg-gray-200 border w-full border-gray-700 rounded-md text-black focus:outline-none"
+              required
+              onfocus="showSkillsDropdown()"
+            />
+            <div
+              id="skillsDropdown"
+              class="hidden absolute z-10 mt-2 w-full bg-white rounded-md shadow-lg text-black"
+            >
+              <ul>
+                <li
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onclick="selectSkill('Programming')"
+                >
+                  Programming
+                </li>
+                <li
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onclick="selectSkill('Networking')"
+                >
+                  Networking
+                </li>
+                <li
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onclick="selectSkill('Hardware')"
+                >
+                  Hardware
+                </li>
+                <li
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onclick="selectSkill('Others')"
+                >
+                  Others
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <div class="flex w-[90%] ml-[15%] p-5">
-          <label class="text-white mx-2">Company Logo</label>
-          <input type="file" />
-          <select name="" id="" class="w-40">
-            <option value="">Select Course</option>
-            <option value="">
+          <label for="availability" class="text-white">Available:</label>
+          <input
+            type="number"
+            id="availability"
+            name="availability"
+            class="h-10 px-4 bg-gray-200 border border-gray-700 rounded-md text-black focus:outline-none"
+            required
+          />
+
+          <div class="flex items-center">
+            <label for="company_logo" class="text-white mr-2"
+              >Company Logo:</label
+            >
+            <input
+              type="file"
+              id="company_logo"
+              name="company_logo"
+              class="bg-gray-200 border border-gray-700 rounded-md text-black focus:outline-none"
+              required
+            />
+          </div>
+
+          <select
+            name="course"
+            id="course"
+            class="w-full h-10 bg-gray-200 border border-gray-700 rounded-md text-black focus:outline-none focus:border-blue-400"
+          >
+            <option value="" class="text-white">Select Course</option>
+            <option value="" class="text-white">
               Bachelor Of Science in Information Technology
             </option>
-            <option value="">Bachelor of Science in Architecture</option>
+            <option value="" class="text-white">
+              Bachelor of Science in Architecture
+            </option>
             <option value="">Bachelor of Science in Criminology</option>
             <option value="">Bachelor of Elementary Education</option>
             <option value="">Bachelor of Physical Education</option>
@@ -366,16 +428,68 @@
             </option>
             <option value="">Bachelor of Public Administration</option>
           </select>
+
           <button
-            class="rounded-md bg-white ml-5 w-[140px] h-[49px] text-black font-semibold text-2xl"
+            type="submit"
+            class="w-[20%] bg-white text-black py-2 rounded-md hover:bg-gray-900 transition duration-300"
           >
             POST
           </button>
-        </div>
-        <span class="text-white">2/2</span>
+        </form>
       </div>
     </section>
+    <script>
+      function showSkillsDropdown() {
+        document.getElementById("skillsDropdown").classList.remove("hidden");
+      }
 
+      function hideSkillsDropdown() {
+        document.getElementById("skillsDropdown").classList.add("hidden");
+      }
+
+      function selectSkill(skill) {
+        const skillsInput = document.getElementById("skills");
+        if (skill === "Others") {
+          hideSkillsDropdown();
+          skillsInput.value = ""; // Clear the input field
+          const otherSkillsInput = document.createElement("input");
+          otherSkillsInput.type = "text";
+          otherSkillsInput.placeholder = "Enter other skills";
+          otherSkillsInput.classList.add(
+            "h-10",
+            "px-4",
+            "bg-gray-200",
+            "border",
+            "w-full",
+            "border-gray-700",
+            "rounded-md",
+            "text-black",
+            "focus:outline-none",
+            "mt-1"
+          );
+          otherSkillsInput.addEventListener("blur", function () {
+            skillsInput.value = otherSkillsInput.value;
+            otherSkillsInput.remove(); // Remove the input field after blurring
+          });
+          skillsInput.parentNode.appendChild(otherSkillsInput);
+          otherSkillsInput.focus();
+        } else {
+          skillsInput.value = skill;
+          hideSkillsDropdown();
+        }
+      }
+
+      document.addEventListener("click", function (event) {
+        const skillsDropdown = document.getElementById("skillsDropdown");
+        const skillsInput = document.getElementById("skills");
+        if (
+          !skillsDropdown.contains(event.target) &&
+          event.target !== skillsInput
+        ) {
+          hideSkillsDropdown();
+        }
+      });
+    </script>
     <script src="../js/jobdesc.js"></script>
     <script src="../js/notif.js"></script>
     <script src=".. /js/profile.js"></script>

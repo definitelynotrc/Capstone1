@@ -18,11 +18,33 @@
             fontFamily: {
               poppins: ["Poppins", "sans-serif"],
             },
+            bg: {
+              bgGrid: "url(./img/bg-grid.png)",
+            },
           },
         },
       };
     </script>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @keyframes scaleAnimation {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(20px, 20px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      .animated-image {
+        animation: scaleAnimation 4s infinite;
+      }
+
       .header {
         background: linear-gradient(180deg, #fff 1.66%, #999 94.46%);
         background-clip: text;
@@ -30,7 +52,7 @@
         -webkit-text-fill-color: transparent;
       }
       .bodybg {
-        background: linear-gradient(125deg, #04101c 11.36%, #222426 92.63%);
+        background-image: url("img/bg-grid.png");
       }
       .bg-footer {
         background-color: #04101c;
@@ -59,7 +81,9 @@
       }
     </style>
   </head>
-  <body class="bodybg text-white font-poppins">
+  <body
+    class="bodybg bg-dark bg-repeat text-white font-poppins overflow-x-hidden"
+  >
     <nav
       class="w-full text-white flex flex-row justify-between px-20 py-4 items-center"
     >
@@ -80,16 +104,21 @@
       </div>
     </nav>
     <header
-      class="w-full mt-20 lg:mt-0 lg:h-[90vh] flex gap-10 flex-col justify-center items-center"
+      class="w-full mt-10 lg:mt-0 lg:h-[90vh] flex-row gap-10 mx-auto flex justify-center items-center"
     >
-      <h1 class="header text-xl lg:text-5xl font-bold lg:w-1/2 text-center">
-        Charting Journeys, Igniting Passions, and Sculpting Futures.
-      </h1>
-      <button
-        class="bg-gradient-to-r from-[#7E74EF] to-[#950E8F] px-10 py-3 rounded-md hover:from-[#950E8F] hover:to-[#7E74EF] hover:text-white transition duration-300 ease-in-out font-semibold"
-      >
-        Get Started
-      </button>
+      <div class="w-[50%] flex flex-col gap-10">
+        <h1 class="header text-xl lg:text-4xl font-bold">
+          Charting Journeys, Igniting Passions, and Sculpting Futures.
+        </h1>
+        <button
+          class="w-[30%] bg-gradient-to-r from-[#7E74EF] to-[#950E8F] px-10 py-3 rounded-md hover:from-[#950E8F] hover:to-[#7E74EF] hover:text-white transition duration-300 ease-in-out font-semibold"
+        >
+          Get Started
+        </button>
+      </div>
+      <div class="-z-10 w-[50] animated-image">
+        <img src="./img/component.png" alt="" class="object-fit" />
+      </div>
     </header>
     <section class="w-full flex flex-col justify-center items-center py-10">
       <h2 class="text-3xl font-semibold">Our Services</h2>

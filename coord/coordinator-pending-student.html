@@ -30,17 +30,7 @@
         },
       };
     </script>
-    <style>
-      .custom-button {
-        padding: 8px;
-        background: #f9fafb;
-        border: 2px solid #1118;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        position: relative;
-        transition: all 0.3;
-      }
-    </style>
+    <style></style>
   </head>
   <body class="font-poppins bg-bodybg">
     <aside class="flex flex-col w-[7%] bg-dark fixed h-[100svh]">
@@ -172,7 +162,7 @@
             </li>
             <li>
               <div
-                class="w-[40px] h-[40px] bg-white flex items-center justify-center rounded-md"
+                class="w-[40px] h-[40px] bg-svgbox flex items-center justify-center rounded-md"
               >
                 <a href="coordinator-pending-companies.html">
                   <svg
@@ -181,7 +171,7 @@
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="black"
+                    stroke="white"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -198,11 +188,11 @@
             </li>
             <li>
               <div
-                class="w-[40px] h-[40px] bg-svgbox flex items-center justify-center rounded-md"
+                class="w-[40px] h-[40px] bg-white flex items-center justify-center rounded-md"
               >
                 <a href="coordinator-pending-student.html">
                   <svg
-                    fill="white"
+                    fill="black"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -311,9 +301,7 @@
         </div>
       </div>
     </nav>
-    <h1 class="text-black ml-[10%] font-semibold text-3xl">
-      Pending Companies
-    </h1>
+    <h1 class="text-black ml-[10%] font-semibold text-3xl">Pending Students</h1>
     <section class="ml-[7%] py-5">
       <div
         class="rounded-md mx-auto w-[95%] min-h-[85svh] flex flex-col bg-jobpost p-4 gap-3"
@@ -342,21 +330,195 @@
         </div>
         <div class="flex flex-wrap gap-8 mt-5">
           <div
-            class="flex flex-col w-[25%] h-[300px] bg-jobdesc rounded-md p-2"
+            class="flex flex-col w-[18%] h-[300px] bg-jobdesc rounded-sm p-2 shadow-lg"
           >
-            <div class="h-36 flex flex-col justify-center items-center">
-              <h1 class="font-semibold text-xl">TECHSTACK</h1>
-              <h3>CLARENCE PAMILAR</h3>
+            <div class="h-[50%] flex flex-col items-center">
+              <img
+                src="../img/clarence.jpg"
+                alt=""
+                class="h-[70px] w-[70px] rounded-full"
+              />
+              <h3 class="font-semibold">Clarence Ariel V. Pamilar</h3>
+              <p class="font-medium text-sm">4-G</p>
+              <p class="font-medium text-sm">BSIT</p>
             </div>
-            <div class="flex flex-col gap-2">
-              <button class="custom-button hover:bg-dark hover:text-white">
-                MOA</button
-              ><button
-                class="custom-button hover:bg-red-500 hover:text-textcolor"
+            <div class="w-full h-0.5 bg-black"></div>
+            <div class="h-[40%] flex flex-col justify-center">
+              <button
+                class="bg-dark hover:bg-gray-800 text-white font-semibold py-1 px-2 rounded mt-2"
               >
-                DECLINE</button
-              ><button class="custom-button hover:bg-dark hover:text-white">
-                ACCEPT
+                Verify
+              </button>
+              <button
+                class="bg-green-500 hover:bg-green-700 text-white font-semibold py-1 px-2 rounded mt-2"
+                onclick="window.location.href='coordinator-student-profile.html'"
+              >
+                View
+              </button>
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-semibold py-1 px- rounded mt-2"
+              >
+                Reject
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col w-[18%] h-[300px] bg-jobdesc rounded-sm p-2 shadow-lg"
+          >
+            <div class="h-[50%] flex flex-col items-center">
+              <img
+                src="../img/orion.jpg"
+                alt=""
+                class="h-[70px] w-[70px] rounded-full"
+              />
+              <h3 class="font-semibold">Sofia Renee V. Santos</h3>
+              <p class="font-medium text-sm">4-D</p>
+              <p class="font-medium text-sm">BSIT</p>
+            </div>
+            <div class="w-full h-0.5 bg-black"></div>
+            <div class="h-[40%] flex flex-col justify-center">
+              <button
+                class="bg-dark hover:bg-gray-800 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                Verify
+              </button>
+              <button
+                class="bg-green-500 hover:bg-green-700 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                View
+              </button>
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-semibold py-1 px- rounded mt-2"
+              >
+                Reject
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col w-[18%] h-[300px] bg-jobdesc rounded-sm p-2 shadow-lg"
+          >
+            <div class="h-[50%] flex flex-col items-center">
+              <img
+                src="../img/Raphale.jpg"
+                alt=""
+                class="h-[70px] w-[70px] rounded-full"
+              />
+              <h3 class="font-semibold">Ralph Ashley O. Canlas</h3>
+              <p class="font-medium text-sm">4-A</p>
+              <p class="font-medium text-sm">BSIT</p>
+            </div>
+            <div class="w-full h-0.5 bg-black"></div>
+            <div class="h-[40%] flex flex-col justify-center">
+              <button
+                class="bg-dark hover:bg-gray-800 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                Verify
+              </button>
+              <button
+                class="bg-green-500 hover:bg-green-700 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                View
+              </button>
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-semibold py-1 px- rounded mt-2"
+              >
+                Reject
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col w-[18%] h-[300px] bg-jobdesc rounded-sm p-2 shadow-lg"
+          >
+            <div class="h-[50%] flex flex-col items-center">
+              <img
+                src="../img/clarence.jpg"
+                alt=""
+                class="h-[70px] w-[70px] rounded-full"
+              />
+              <h3 class="font-semibold">Clarence Ariel V. Pamilar</h3>
+              <p class="font-medium text-sm">4-K</p>
+              <p class="font-medium text-sm">BSIT</p>
+            </div>
+            <div class="w-full h-0.5 bg-black"></div>
+            <div class="h-[40%] flex flex-col justify-center">
+              <button
+                class="bg-dark hover:bg-gray-800 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                Verify
+              </button>
+              <button
+                class="bg-green-500 hover:bg-green-700 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                View
+              </button>
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-semibold py-1 px- rounded mt-2"
+              >
+                Reject
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col w-[18%] h-[300px] bg-jobdesc rounded-sm p-2 shadow-lg"
+          >
+            <div class="h-[50%] flex flex-col items-center">
+              <img
+                src="../img/andro.jpg"
+                alt=""
+                class="h-[70px] w-[70px] rounded-full"
+              />
+              <h3 class="font-semibold">Paul Kevin Andrew Villena</h3>
+              <p class="font-medium text-sm">4-A</p>
+              <p class="font-medium text-sm">BSIT</p>
+            </div>
+            <div class="w-full h-0.5 bg-black"></div>
+            <div class="h-[40%] flex flex-col justify-center">
+              <button
+                class="bg-dark hover:bg-gray-800 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                Verify
+              </button>
+              <button
+                class="bg-green-500 hover:bg-green-700 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                View
+              </button>
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-semibold py-1 px- rounded mt-2"
+              >
+                Reject
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col w-[18%] h-[300px] bg-jobdesc rounded-sm p-2 shadow-lg"
+          >
+            <div class="h-[50%] flex flex-col items-center">
+              <img
+                src="../img/clinton.jpg"
+                alt=""
+                class="h-[70px] w-[70px] rounded-full"
+              />
+              <h3 class="font-semibold">Clint Zeus C. Casil</h3>
+              <p class="font-medium text-sm">4-F</p>
+              <p class="font-medium text-sm">BSIT</p>
+            </div>
+            <div class="w-full h-0.5 bg-black"></div>
+            <div class="h-[40%] flex flex-col justify-center">
+              <button
+                class="bg-dark hover:bg-gray-800 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                Verify
+              </button>
+              <button
+                class="bg-green-500 hover:bg-green-700 text-white font-semibold py-1 px-2 rounded mt-2"
+              >
+                View
+              </button>
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-semibold py-1 px- rounded mt-2"
+              >
+                Reject
               </button>
             </div>
           </div>
